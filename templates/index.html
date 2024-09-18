@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Pack Launcher</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Fun Pack Launcher 🎉</h1>
+
+        <div class="card" onclick="getZenQuote()">
+            <h2>🧘 Zen Focus Timer</h2>
+            <p id="zen-quote"></p>
+        </div>
+
+        <div class="card" onclick="getCompliment()">
+            <h2>💬 Compliment Mirror</h2>
+            <p id="compliment"></p>
+        </div>
+
+        <div class="card">
+            <h2>🎨 Mood Palette</h2>
+            <input type="text" id="mood-input" placeholder="Enter your mood">
+            <button onclick="getMoodPalette()">Get Palette</button>
+            <p id="palette"></p>
+        </div>
+
+        <div class="card">
+            <h2>😊 Emoji Translator</h2>
+            <input type="text" id="emoji-input" placeholder="Enter sentence">
+            <button onclick="getEmojiTranslation()">Translate</button>
+            <p id="emoji-translation"></p>
+        </div>
+
+        <div class="card">
+            <h2>🎡 Decision Wheel</h2>
+            <input type="text" id="decision-input" placeholder="Enter options separated by commas">
+            <button onclick="spinDecisionWheel()">Spin the Wheel</button>
+            <p id="decision-result"></p>
+        </div>
+
+        <div class="card" onclick="generateGibberish()">
+            <h2>🤪 Gibberish Generator</h2>
+            <p id="gibberish"></p>
+        </div>
+
+        <div class="about">
+            <a href="/about">About the App</a>
+        </div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
